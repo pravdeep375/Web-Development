@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Assignment 2</title>
+     <script src="jquery-1.11.3.js"></script>
+     <link rel="stylesheet" type="text/css" href="styles.css">
+   </head>
+
+  <body>
+    <canvas id='canvas1' class='canvas' width='800' height='500'>
+      Canvas not supported
+    </canvas> 
+    <div></div>
+    <div id = "inputField" >
+      <input type = "text"  id="userTextField" name = "userTextField"  value="" size = "75" />
+      <input type="button" value="Submit Request" onClick="handleSubmitButton()">
+      <input type="button" value="Refresh" onclick="handleRefresh()">
+      <input type="button" value="Save As" onclick="handleSaveAs()">
+    </div>
+    <div id = "transposebuttons">
+      <input type="button" value="Transpose Up" onclick="handleTranspose(mode='up')">
+      <input type="button" value="Transpose Down" onclick="handleTranspose(mode='down')">
+    </div>
+    <div id = "songParagraph"></div>
+   
+    <script src='assignment2Client.js'></script>
+  </body>
+</html>

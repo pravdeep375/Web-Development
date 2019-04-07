@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Assignment 4 </title>
+        <script src="jquery-1.11.3.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.js"></script>
+        <link rel = "stylesheet"  type = "text/css" href = "styles.css" />
+    </head>
+    <body>
+        <div id = inputfield>
+            <input type="text" value=" " autofocus placeholder="Enter Query" id="userTextField" name="userTextField">
+            <input type="button" value="Submit" onclick="handleGetRecipesButton()">
+            <h1 id="heading">Recipes:  waiting for query</h1>
+        </div>
+    <div>
+        <table id='recipeData' >
+            
+        </table>
+    </div>
+    <script src="recipes_client.js"></script>
+  </body>
+</html>
+
+  <script id="Element" type="text/x-handlebars-template">
+    <td id="element">
+        <table id="f2furl" class="center">
+            <tr>
+                <th><img src={{imgSrc}} alt="N/A" width="350" height="300"></th>
+            </tr>
+            <tr>
+                <td><a href="{{recipeHref}}" target="_blank">{{recipeName}}</a></td>
+            </tr>
+        </table>
+    </td>
+    </script>

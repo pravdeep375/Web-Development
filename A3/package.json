@@ -1,0 +1,17 @@
+{
+  "name": "comp2406_a4",
+  "version": "1.0.0",
+  "description": "Express server that renders a table from data requested from the food2fork API",
+  "main": "express_food_server.js",
+  "scripts": {
+    "test": "node express_food_server.js"
+  },
+  "author": "Pravdeep Deol",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "handlebars": "^4.0.12",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {}
+}
